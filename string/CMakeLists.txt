@@ -65,7 +65,7 @@ if ( UNIT_TEST )
     ####################################################################################
     get_filename_component ( TARGET_NAME ${CMAKE_CURRENT_SOURCE_DIR}/.. ABSOLUTE )
     string ( REPLACE " " "_" TARGET_NAME ${TARGET_NAME}Test)
-    string ( REGEX MATCH "[0-9a-zA-Z]+Test" TARGET_NAME ${TARGET_NAME} )
+    string ( REGEX MATCH "[0-9a-zA-Z]+Test" TARGET_NAME ${TARGET_NAME} ) 
 
     message ( "Target Name: " ${TARGET_NAME} )
 
